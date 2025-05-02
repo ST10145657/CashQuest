@@ -31,6 +31,7 @@
         android:layout_height="26dp"
         android:text="Amount"
         android:textColor="#000"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/bottomNav"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,6 +45,7 @@
         android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:hint="Enter amount here"
+        android:background="@drawable/edit_text"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,6 +60,7 @@
         android:layout_height="26dp"
         android:text="Date"
         android:textColor="#000"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/bottomNav"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,6 +75,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter date"
         android:padding="10dp"
+        android:background="@drawable/edit_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -85,6 +89,7 @@
         android:layout_height="26dp"
         android:text="Description"
         android:textColor="#000"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/bottomNav"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,6 +104,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter description"
         android:padding="10dp"
+        android:background="@drawable/edit_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -112,6 +118,7 @@
         android:layout_height="26dp"
         android:text="Category"
         android:textColor="#000"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/bottomNav"
         app:layout_constraintEnd_toEndOf="parent"
@@ -127,7 +134,8 @@
         android:hint="Enter category"
         android:inputType="text"
         android:padding="10dp"
-        android:textSize="16sp"
+        android:textSize="16dp"
+        android:background="@drawable/edit_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -143,9 +151,10 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.629">
+        app:layout_constraintVertical_bias="0.559">
 
         <Button
             android:id="@+id/btnFuel"
@@ -190,12 +199,13 @@
         android:backgroundTint="#FFFFFF"
         android:text="Add Receipt"
         android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/bottomNav"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.718" />
+        app:layout_constraintVertical_bias="0.652" />
 
     <Button
         android:id="@+id/saveExpenseBtn"
@@ -204,12 +214,13 @@
         android:backgroundTint="#FFFFFF"
         android:text="Save Expenses"
         android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/bottomNav"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.806" />
+        app:layout_constraintVertical_bias="0.725" />
 
     <Button
         android:id="@+id/cancelBtn"
@@ -218,12 +229,12 @@
         android:backgroundTint="#FFFFFF"
         android:text="Cancel"
         android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.892" />
+        app:layout_constraintVertical_bias="0.809" />
 
     <LinearLayout
         android:id="@+id/bottomNav"
@@ -232,10 +243,13 @@
         android:background="#03A9F4"
         android:gravity="center"
         android:orientation="horizontal"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981">
 
         <ImageButton
             android:id="@+id/btnHome"
